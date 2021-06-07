@@ -1,0 +1,145 @@
+*{
+  /* background-color: red; ! test */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+/*  header  */
+header{
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  top: 0;
+}
+
+header .row{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+
+/*  prima row  */
+header .row.sopra{
+  padding-bottom: 0;
+}
+
+header .row.sopra .left img{
+  height: 100%;
+  cursor: pointer;
+}
+
+header .row.sopra .left{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+header .row.sopra .left a {
+  margin-left: 5px;
+  font-size: 25px;
+  text-decoration: none;
+  color: #5f6368;
+}
+
+header .row.sopra .left a:hover{
+  text-decoration: underline;
+}
+
+/*  contenitore di destra con i bottoni  */
+header .row.sopra .rigth {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+header .row.sopra .right button{
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+header .row.sopra .right button:first-child{
+  padding: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+header .row.sopra .right button:first-child:hover{
+  background-color: #5f6368;
+}
+
+header .row.sopra .right button:nth-child(2){
+  padding: 8px 12px;
+  background-color: #1a73e8;
+  color: white;
+  border-radius: 5px;
+}
+
+header .row .right button:nth-child(2):hover{
+  background-color: #1c59a8;
+}
+/*  /prima row  */
+
+/*  seconda row  */
+header .row.sotto{
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-bottom: 1px solid grey;
+}
+
+header .row.sotto ul{
+  height: 100%;
+  list-style: none;
+  text-decoration: none;
+}
+
+header .row.sotto ul li{
+  height: 100%;
+  padding: 10px 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+header .row.sotto ul li:first-child{
+  padding-left: 0;
+}
+
+header .row.sotto ul li:last-child{
+  color: #1a73e8;
+  border-bottom: 3px solid #1a73e8;
+}
+/*  /seconda row  */
+
+/*  /header  */
+
+/* main */
+
+main .container{
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+main .container ul{
+  list-style: none;
+  text-decoration: none;
+}
+
+main .container ul li:first-of-type{
+  margin-top: 120px;
+}
+
+main .container ul li:nth-child(2n+0){
+  margin-bottom: 30px;
+  padding-top: 20px;
+}
+
+main .container ul li:nth-child(odd){
+  padding-top: 64px;
+  font-size: 24px;
+  color: #3c4043;
+}
