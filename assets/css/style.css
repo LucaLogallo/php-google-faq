@@ -133,12 +133,11 @@ main .container ul li:first-of-type{
   margin-top: 120px;
 }
 
-main .container ul li:nth-child(2n+0){
-  margin-bottom: 30px;
+main .container ul li.text{
   padding-top: 20px;
 }
 
-main .container ul li:nth-child(odd){
+main .container ul li.title{
   padding-top: 64px;
   font-size: 24px;
   color: #3c4043;
